@@ -61,3 +61,18 @@ const friend = {
 }
 
 console.log(friend.fullName()+ " is " + friend.age + " years old.");
+
+const car = {
+    year: 2020,
+    make: "Dodge",
+    model: "Charger",
+    automatic: false,
+    mpg: 19,
+    efficiency: function () {
+        return (this.mpg>40);
+    }
+}
+
+document.getElementById('car').innerHTML = "I own a " + car.year + " " + car.make + " " + car.model +".";
+
+document.getElementById('carEff').innerHTML = car.make + " "+car.model+" Efficiency: " + car.efficiency();
