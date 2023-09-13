@@ -2,7 +2,7 @@ function intFinal() {
     var prin = document.getElementById('pInput').value;
     var rat = document.getElementById('rInput').value;
     var tim = document.getElementById('tInput').value;
-    var gained = (rat * tim)*100;
+    var gained = (rat * tim)*10;
     let g = gained.toFixed(2);
     let Int = prin * (1+((rat/100)*tim));
     let i = Int.toFixed(2);
