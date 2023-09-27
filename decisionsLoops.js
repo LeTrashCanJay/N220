@@ -107,4 +107,52 @@ function rollDie() {
             break;
     }
     document.getElementById('dice_1').innerHTML = '<img src ="YOU SHALL DIE!/' +dieImg+'"/>';
+    rNum = Math.floor(Math.random()*6)+1;
+    switch(rNum) {
+        case 1:
+            dieImg = "die_face_1.png";
+            break;
+        case 2:
+            dieImg = "die_face_2.png";
+            break;
+        case 3:
+            dieImg = "die_face_3.png";
+            break;
+        case 4:
+            dieImg = "die_face_4.png";
+            break;
+        case 5:
+            dieImg = "die_face_5.png";
+            break;
+        case 6:
+            dieImg = "die_face_6.png";
+            break;
+        default:
+            console.log("Something went wrong...");
+            break;
+    }
+    document.getElementById('dice_2').innerHTML = '<img src ="YOU SHALL DIE!/' +dieImg+'"/>';
 }
+
+//Seasons
+
+//thisMonth holds this month
+var seasonText;
+switch(true) {
+    case (thisMonth == 12||thisMonth<=2):
+        seasonText = "It's Winter";
+        break;
+    case (thisMonth>=3 && thisMonth<=5):
+        seasonText = "It's Spring";
+        break;
+    case (thisMonth>= 6 && thisMonth<=8):
+        seasonText = "It's Summer";
+        break;
+    case (thisMonth>=9 && thisMonth <=11):
+        seasonText = "It's Fall";
+        break;
+    default:
+        seasonText = "This is not an option...";
+}
+
+document.getElementById('season').innerHTML = seasonText;
