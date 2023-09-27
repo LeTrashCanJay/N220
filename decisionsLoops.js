@@ -34,4 +34,77 @@ if(thisMonth==7) {
  }
 
 
-//Time of Day
+//Time of Day/Greeting
+let tHours = today.getHours();
+let greeting;
+//tHours = 20;
+if(tHours<=12) {
+    greeting = "Good Morning!";
+} else if (tHours>12 && tHours<=16) {
+    greeting = "Good Afternoon!";
+} else if (tHours > 16 && tHours<=20) {
+    greeting = "Good Evening!"
+} else {
+    greeting = "Good Night!";
+}
+
+document.getElementById('myTime').innerHTML = greeting;
+
+//Student
+let midterm = 78;
+let final = 87;
+let total = midterm+final+47+62;
+let myAvg = (total/350)*100;
+let studentText;
+
+if (midterm >50 && final >72) {
+    studentText = "You passed the class!"
+} else {
+    studentText = "Sorry, you did not pass the class."
+}
+
+console.log(myAvg);
+
+if ((midterm>50 && final>72) || myAvg>80) {
+    studentText +="<br/>The class is complete!";
+} else {
+    studentText +="<br/>The class is not complete.";
+}
+
+document.getElementById('msg').innerHTML=studentText;
+
+function newNum() {
+    let ranNum = Math.floor(Math.random()*20)+1;
+    document.getElementById("rNum20").innerHTML = ranNum;
+}
+
+//Dice Roll
+
+function rollDie() {
+    var dieImg;
+    let rNum = Math.floor(Math.random()*6)+1;
+    switch(rNum) {
+        case 1:
+            dieImg = "die_face_1.png";
+            break;
+        case 2:
+            dieImg = "die_face_2.png";
+            break;
+        case 3:
+            dieImg = "die_face_3.png";
+            break;
+        case 4:
+            dieImg = "die_face_4.png";
+            break;
+        case 5:
+            dieImg = "die_face_5.png";
+            break;
+        case 6:
+            dieImg = "die_face_6.png";
+            break;
+        default:
+            console.log("Something went wrong...");
+            break;
+    }
+    document.getElementById('dice_1').innerHTML = '<img src ="YOU SHALL DIE!/' +dieImg+'"/>';
+}
