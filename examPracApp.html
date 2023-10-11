@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text" id="str" name="str"/>
+    <button onClick="getStr()">Submit Text</button>
+    <p id="strAnswer"></p>
+    <script>
+        function getStr() {
+            let myStr = document.getElementById('str').value;
+            let strLength = myStr.length;
+            let rNum = Math.floor(Math.random()*strLength)+1;
+            let rChar = myStr.charAt(rNum);
+            let middle = strLength/2;
+            let strText;
+
+            console.log(middle);
+
+            if (rNum > middle) {
+                strText = "This letter is in the second half of your string: " + rChar;
+            } else if (rNum == middle) {
+                strText = "This letter is right in the middle of your string: " + rChar;
+            } else {
+                strText = "This letter is in the first half of your string: " + rChar;
+            }
+            document.getElementById('strAnswer').innerHTML=strText;
+        }
+    </script>
+</body>
+</html>
