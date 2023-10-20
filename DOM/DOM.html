@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working the DOM</title>
+    <style>
+        .problem {background-color:rgb(200,200,200); border:2px solid black;margin-bottom:20px;}
+h3 {color:white; background-color:teal;padding:10px; margin:0;border-bottom:2px solid black;}
+
+.odd {background-color:gray;}
+.firstOdd {background-color:lightGreen;}
+
+ul {
+  float:left; width:33%; margin-right:50px;
+}
+
+li {border-top:2px solid rgba(255,255,255,0.4);
+border-bottom:1px solid black;}
+
+.rock{background-color: lightsteelblue;}
+.alternative{background-color:lightgray;}
+.country {background-color:lightcoral;}
+
+#artistList+ul {
+  clear:both;
+  float:none;
+
+}
+
+ .shopping{
+  background-color:lightsteelblue;
+  border-top:1px solid white;
+  border-bottom:1px solid black;
+}
+
+    </style>
+</head>
+<body></body>
+        <h1 id="title">The DOM Tree</h1>
+        <h2>Accessing &amp; Working with Elements</h2>
+        <p class="content">Here is an example of how to use DOM objects to access elements.</p>
+        <p>Hopefully you will find this easier to understand since we have seen these in action.</p>
+        <p>You are going to script examples of the following:</p>
+        <ul id="myList">
+          <li class="odd">getElementById</li>
+          <li>querySelector</li>
+          <li class="odd">getElementsByClassName</li>
+          <li>getElementsByTagName</li>
+          <li class="odd">querySelectorAll</li>
+        </ul>
+        
+        <ul id="artistList">
+          <li class="rock">Black Crowes</li>
+          <li class="alternative">Gin Blossoms</li>
+          <li class="alternative">Green Day</li>
+          <li class="country">Chris Stapleton</li>
+          <li class="rock">Candlebox</li>
+        </ul>
+        
+        <ul>
+          <li>Bread</li>
+        </ul>
+         <input type="button" value="Add Item" onclick="addItem()" name="addItem"/> 
+        <input type="button" value="Delete Item" onclick="deleteItem()" name="deleteItem"/> 
+        <script src="DOM.js"></script>
+</body>
+</html>
