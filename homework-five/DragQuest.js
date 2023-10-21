@@ -127,7 +127,7 @@ function shieldBattle() {
         alert("You raise your shield to defend yourself. The dragon blows a nasty blast of fire at you! Your shield... melts under the heat and you are consumed by flames. Your adventure ends here...");
     } else if (check4>1 && check4<10) {
         alert("You raise your shield to defend yourself. The dragon blows a nasty blast of fire at you! Your shield... holds up, but you drop it due to how hot it is. The dragon takes the opportunity to swallow you and the maiden whole. Your adventure ends here...");
-    } else if (check4=>10 && check4<20) {
+    } else if (check4>=10 && check4<20) {
         alert("You dodge an incoming fireball and slam the shield into the dragon's head! It stuns the beast, giving you time to escape with the maiden!");
         escapeLair();
     } else if (check4 ==20) {
