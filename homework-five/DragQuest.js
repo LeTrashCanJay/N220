@@ -131,8 +131,8 @@ function shieldBattle() {
         alert("You dodge an incoming fireball and slam the shield into the dragon's head! It stuns the beast, giving you time to escape with the maiden!");
         escapeLair();
     } else if (check4 ==20) {
-        alert("A natural 20! You dodge an incoming fireball and slam the shield into the dragon's head! You slay the dragon in one attack! The maiden runs down the golden mountain to embrace you.");
-        escape20();
+        alert("A natural 20! You look out from your shield and give the dragon a friendly look. The dragon stops and inches closer to you... and it licks your face. Somehow, some way... You've seduced the dragon. You are confused. The maiden is confused. But it happened like that.");
+        shield20();
     } else {
         alert("You get confused and the dragon takes the opportunity to swallow you and the maiden whole. Your adventure ends here...");
     }
@@ -150,6 +150,10 @@ function escape20() {
     } else if (gold.toUpperCase()=="KEEP") {
         alert("You keep the mountain of riches for yourself and your rescued maiden. You harvest the dragon's scales and sell them to increase your wealth. You buy yourself a castle in the countryside and live out the rest of your days, rich, happy, and prosperous.");
     }
+}
+
+function shield20() {
+    alert("You managed to get the dragon to like you... A strange ending, but one ending nonetheless. You, your maiden friend, and your dragon companion take to the skies to live on in happiness, forevermore.");
 }
 
 function goHome() {
