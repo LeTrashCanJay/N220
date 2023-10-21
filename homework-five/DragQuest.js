@@ -148,7 +148,7 @@ function escape20() {
     if (gold.toUpperCase()=="OFFER") {
         alert("You offer the gold to the people of your world. They hail you as a hero and the king of the land recognizes your efforts! You are knighted, and the maiden you have saved wishes to become your life partner! A happy ending for all! (Except the dragon...)");
     } else if (gold.toUpperCase()=="KEEP") {
-        alert("You keep the mountain of riches for yourself and your rescued maiden. You harvest the dragon's scales and sell them to increase your wealth. You buy yourself a castle in the countryside and live out the rest of your days, rich, happy, and prosperous.");
+        alert("You keep the mountain of riches for yourself and your rescued maiden. You harvest the dragon's scales and sell them to increase your wealth. You buy yourself a castle in the countryside and live out the rest of your days, rich, happy, and prosperous. In the corner of your room... you see the"+tools+" that aided you on your quest.");
     }
 }
 
