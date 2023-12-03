@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <form>
+        <label>Loan Amount</label>
+        <input type="number" name="loanInput" id="lInput" />
+        <br/>
+        <label>Interest Rate</label>
+        <input type="number" name="rateInput" id="rInput" />
+        <br/>
+        <label>Loan Term(In Years)</label>
+        <input type="number" name="timeInput" id="tInput" />
+        <br/>
+        <input type="button" value="Calculate Monthly Payment" onclick="loanPay()"/>
+    </form>
+
+    <ul>
+        <li id="amount"></li>
+        <li id="rate"></li>
+        <li id="time"></li>
+    </ul>
+
+    <p id="results"></p>
+
+    <script src="mortCalc.js"></script>
+</body>
+</html>
