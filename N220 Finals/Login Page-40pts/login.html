@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: darkgreen;
+        }
+
+        input+p{
+            display:inline;
+            margin-left:1em;
+            color:red;
+        }
+
+        fieldset {
+            background-color: white;
+        }
+
+        label {
+            display:inline-block;
+            width:125px;
+            margin: 0 0.5em 0.5em 0;
+            text-align: right;
+        }
+
+        input+p{
+            display:inline;
+            margin-left:1em;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label>Username</label>
+            <input type="text" name="user" id="user"/><br/>
+            <label>Password</label>
+            <input type="password" name="pass" id="pass"/>
+            <p id="passError"></p><br/>
+            <label>Re-enter Password</label>
+            <input type="password" name="passVal" id="passVal"/>
+            <p id="samePassError"></p><br/>
+            <input type="submit" value="Register" id="regButton"/>
+        </fieldset>
+        <h1 id="registered"></h1>
+        <fieldset>
+            <label>Username</label>
+            <input type="text" name="user" id="user2"/>
+            <p id="userCheck"></p><br/>
+            <label>Password</label>
+            <input type="password" name="pass" id="pass2"/>
+            <p id="wrongPass"></p><br/>
+            <button onclick="loginVal()" class="button">Login</button><br/>
+            <h2 id="logged"></h2>
+        </fieldset>
+    </form>
+
+    <script src="login.js"></script>
+</body>
+</html>
