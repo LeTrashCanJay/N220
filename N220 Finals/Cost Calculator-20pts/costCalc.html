@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculator</title>
+    <style>
+        label {
+            display:inline-block;
+            width:125px;
+            margin: 0 0.5em 0.5em 0;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h3>Available Discount Codes</h3>
+        <ul>
+            <li>SAVE20: 20% off.</li>
+            <li>CLOSEOUT: 40% off.</li>
+            <li>HOLIDAYS: 15% off.</li>
+            <li>TESTCODE: 100% off.</li>
+        </ul>
+    </section>
+
+    <form>
+        <label>Price</label>
+        <input type="text" name="price" id="price"/><br/>
+        <label>Discount Code</label>
+        <input type="text" name="discount" id="discount"/><br/>
+        <input type="submit" value="New Price" id="final"/>
+    </form>
+
+    <p id="input"></p>
+    <p id="results"></p>
+
+    <script src="costCalc.js"></script>
+</body>
+</html>
