@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Finder</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        tr {
+            padding: 1px 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Grade Input</label>
+        <input type="text" name="grade" id="grade"/><br/>
+        <p>Grade cannot exceed 500pts.</p><br/>
+        <input type="submit" value="Your Grade" id="gradeButton"/>
+    </form>
+    <p id="input"></p>
+    <p id="avg"></p>
+    <div id="table"></div>
+
+    <script src="gradeFind.js"></script>
+</body>
+</html>
