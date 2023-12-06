@@ -28,7 +28,7 @@ let tr = document.getElementsByTagName('tr');
 function gradeFinder() {
     let grade=document.getElementById('grade').value;
     let average = grade/500;
-    let percentage = average.toFIxed(2)*100;
+    let percentage = average.toFixed(2)*100;
 
     document.getElementById('input').innerText=`Input: ${grade}pts`;
     document.getElementById('avg').innerText=`Result: Grade Average: ${percentage}%`;
