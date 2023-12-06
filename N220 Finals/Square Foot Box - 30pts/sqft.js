@@ -6,5 +6,10 @@ function boxCalc() {
     document.getElementById('input').innerText="Width: "+width+" feet. Height: "+height+" feet.";
     document.getElementById('output').innerText="Square footage: "+sqft+" feet squared.";
 
-    square(width*10, height*10);
+    document.querySelectorAll('div.square').forEach(item=>item.remove());
+    var square = document.createElement('div');
+        square.className='square'
+        square.style.width =width*10 +'px';
+        square.style.height =height*10+'px';
+        document.body.appendChild(square);
 }
